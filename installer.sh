@@ -6,7 +6,7 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 sudo usermod -aG docker $USER
 
-sudo apt update && sudo apt install -y docker-compose htop
+sudo apt update && sudo apt install -y docker-compose htop make
 
 # set up docker compose alias
 grep "alias dc=" ~/.bashrc || echo "alias dc='docker-compose'" >>~/.bashrc
